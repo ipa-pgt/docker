@@ -40,11 +40,16 @@ for r in ros ros-shadow-fixed; do
     export_dockerfile lunar $r stretch debian:stretch
     export_dockerfile melodic $r stretch debian:stretch
     export_dockerfile melodic $r artful
+    
     export_dockerfile indigo $r trusty ros:indigo-ros-core-trusty ros-core-trusty
+    export_dockerfile indigo $r trusty ros:indigo-ros-core-trusty ros-core
     export_dockerfile kinetic $r xenial ros:kinetic-ros-core-xenial ros-core-xenial
+    export_dockerfile kinetic $r xenial ros:kinetic-ros-core-xenial ros-core
     export_dockerfile kinetic $r jessie ros:kinetic-ros-core-jessie ros-core-jessie
     export_dockerfile lunar $r xenial ros:lunar-ros-core-xenial ros-core-xenial
+    export_dockerfile lunar $r xenial ros:lunar-ros-core-xenial ros-core
     export_dockerfile lunar $r stretch ros:lunar-ros-core-stretch ros-core-stretch
     export_dockerfile melodic $r bionic ros:melodic-ros-core-bionic ros-core-bionic
+    export_dockerfile melodic $r bionic ros:melodic-ros-core-bionic ros-core
     export_dockerfile melodic $r stretch ros:melodic-ros-core-stretch ros-core-stretch
 done
