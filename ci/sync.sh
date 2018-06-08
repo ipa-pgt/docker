@@ -53,3 +53,4 @@ for r in ros ros-shadow-fixed; do
     export_dockerfile melodic $r bionic ros:melodic-ros-core-bionic ros-core
     export_dockerfile melodic $r stretch ros:melodic-ros-core-stretch ros-core-stretch
 done
+
